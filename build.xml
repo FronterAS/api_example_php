@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Fronter" default="build" basedir=".">
+    <description>Build File for chekcing PHPCS on Consumer Application</description>
+    <property environment="env"/>
+    <target name="phpcs">
+        <exec executable="phpcs">
+            <arg line="--report=checkstyle
+		--report-file=${basedir}/build/logs/checkstyle.xml
+		--standard=PSR2 ${basedir}/src ${basedir}/Tests "/>
+        </exec>
+    </target>
+</project>

@@ -1,0 +1,7 @@
+{
+  "require": {
+    "adoy/oauth2": "dev-master",
+    "phpunit/phpunit": "3.7.14",
+    "squizlabs/php_codesniffer": "1.*"
+  }
+}
